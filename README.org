@@ -1,0 +1,20 @@
+#+title: CL-LIBMODBUS: Common Lisp CFFI bindings to Libmodbus
+#+author: 凉凉
+* About
+*ATTENTION*: this project is not well tested in the real working
+situation! please use with caution! Issues are welcome, though
+you may need providing me exactly the working environments.
+
+This is a Common Lisp wrapper for [[https://libmodbus.org][libmodbus]]. If you find any
+bugs, missing features or handy wrapping ideas, please join
+and help.
+
+For normal users, you may try like below:
+
+#+begin_src lisp
+  (let ((client (make-instance 'tcp-context :ip "192.168.1.123" :port 2333)))
+    (modread client 0 5 :method :read-holding-registers))
+#+end_src
+
+*Note*: since I don't have the device by my hand so I cannot
+carry on more tests. 

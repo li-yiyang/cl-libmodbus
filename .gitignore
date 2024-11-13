@@ -1,0 +1,2 @@
+lisp/spec/*.spec
+lisp/spec/modbus.*.lisp
