@@ -7,7 +7,7 @@
 ;; Copyright (c) 2024, 凉凉, all rights reserved
 ;; Created: 2024-11-12 15:10
 ;; Version: 0.0.0
-;; Last-Updated: 2024-11-12 16:35
+;; Last-Updated: 2024-11-20 17:13
 ;;           By: 凉凉
 ;; URL: https://li-yiyang.github.io
 ;; Keywords:
@@ -35,7 +35,7 @@
   :version "0"
   :description "A Common Lisp wrapper for libmodbus. "
   :defsystem-depends-on (cffi/c2ffi)
-  :depends-on (cffi trivial-garbage)
+  :depends-on (cffi trivial-garbage str)
   :serial t
   :pathname "lisp"
   :components
